@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .trans {
     transition: all 0.5s ease-out;
 }
@@ -32,4 +35,30 @@
     border-radius: 3%;
 }
 .dot{
+}
+.filter-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#filter{
+    height: 62px;
+    width: 80%;
+    font-size: 1em;
+    font-weight: bold;
+    margin: center;
+    color: #333;
+    padding-left: 3%;
+
+}
+.filter-checkbox {
+    position: fixed;
+    right: 50px;
+   
+
+}
+#filter-checkbox{
+    height: 62px;
+    width: 62px;
+    padding: 3%;
 }
