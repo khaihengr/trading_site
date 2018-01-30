@@ -8,12 +8,13 @@ module.exports = (io) => {
     const { binance,binancefinding } = require("../libtrads/binance");
     const { poloniex } = require("../libtrads/poloniex");
     io.on('connection', function (socket) {
-        bitfinex(io);
-        binance(io);
-        bittrex(io);
+
     });
+    bitfinex(io);
+    binance(io);
+    bittrex(io);
     router.get('/',(req,res)=>{
-       
+        
         res.render("index",{tab:"screen/trad"})
     })
     router.get('/find',(req,res)=>{
@@ -26,7 +27,7 @@ module.exports = (io) => {
         res.render("index",{tab:"screen/trad"})
     })
     
-
-
+    
+    
     return router;
 }

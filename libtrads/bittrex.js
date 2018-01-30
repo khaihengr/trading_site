@@ -19,7 +19,7 @@ let bittrex = (io) => {
                     arr.push({
                         symbol: e.MarketName,
                         price: e.Last,
-                        web:'Bittrex'
+                        web:'bittrex'
                     })
                 }
             });

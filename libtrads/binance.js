@@ -14,13 +14,13 @@ let binance = (io) => {
                     data.push( {
                         symbol: m.s.replace(/usdt/i, 'USD'),
                         price: m.b,
-                        web:'benance'
+                        web:'binance'
                     })
                 } else {
                     data.push( {
                         symbol: m.s,
                         price: m.b,
-                        web:'Benance'
+                        web:'binance'
                     })
                 }
                 

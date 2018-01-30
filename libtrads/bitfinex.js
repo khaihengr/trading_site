@@ -57,7 +57,7 @@ let bitfinex = (io) => {
                 io.emit("bitfinex",{
                     symbol: msg[2],
                     price: msg[1][6],
-                    web:'Bitfinex'
+                    web:'bitfinex'
                 })
             }
         }
