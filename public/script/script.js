@@ -233,7 +233,7 @@ $(document).ready(function (event) {
                     $("#mytrad thead tr").append(`<th data-sort="float"><h1>Compare</h1></th>`);
                     s.forEach(function (r) {
                         $("#trad_body tr."+r.symbol).append(`<td class="compare">${r.diff}</td>`);
-                        $("#trad_body").append(`<tr >${$("#trad_body tr."+r.symbol).html()}</tr>`);
+                        // $("#trad_body").append(`<tr >${$("#trad_body tr."+r.symbol).html()}</tr>`);
                     })
                 },500)
             }, 500);
